@@ -71,7 +71,7 @@ namespace config
 			return m_Enabled;
 		}
 
-		inline bool operator==(const Toggle<T>& rhs)
+		inline bool operator==(const Toggle<T>& rhs) const
 		{
 			return rhs.m_Enabled == m_Enabled && rhs.m_Value == m_Value;
 		}

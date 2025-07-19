@@ -24,7 +24,7 @@ namespace cheat
 			std::unordered_map<uint32_t, std::string> id2Profiles;
 			std::unordered_map<std::string, std::unordered_set<uint32_t>> profiles2id;
 
-			inline bool operator==(const AccountConfig& other)
+			inline bool operator==(const AccountConfig& other) const
 			{
 				return accounts.size() == other.accounts.size() && pseudos.size() == other.pseudos.size();
 			}
